@@ -1,0 +1,16 @@
+.Box{
+width: 800px;
+height: 600px;
+border: 2px solid black;
+display: grid;
+grid-template-columns: ;
+gap: 10px;
+
+}
+
+.inner{
+    width: 60px;
+    height: 30px;
+    border: 2px solid black;
+
+}

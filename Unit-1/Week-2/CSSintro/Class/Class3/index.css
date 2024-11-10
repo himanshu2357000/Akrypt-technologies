@@ -1,0 +1,42 @@
+.box1{
+    width: 1220px;
+    height: 455px;
+    border: 2px solid red;
+    display: flex;
+    text-align: center;
+    gap: 10px;
+    margin: auto;
+}
+
+.box2{
+    width: 400px;
+    height: 450px;
+    border: 2px solid black;
+}
+.box4{
+    width: 1220px;
+    height: 455px;
+    border: 2px solid red;
+    display: flex;
+    text-align: center;
+    gap: 10px;
+    margin: auto;
+}
+.box3{
+    width: 400px;
+    height: 450px;
+    border: 2px solid black;
+}
+.colorbox{
+    width: 620px;
+    height: 255px;
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: repeat( 2,2fr);
+    text-align: center;
+    gap: 20px;
+    
+}
+.coloboxc{
+      
+}

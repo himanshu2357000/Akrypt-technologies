@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Background */
+        body {
+            background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Flocaldstvinstaller.co.za%2Fbest-series-on-netflix-south-africa%2F&psig=AOvVaw2I9owh2M-FeUGf8eUJoY-j&ust=1730254531020000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIDSv8jCsokDFQAAAAAdAAAAABAJ');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Main Content Container */
+        #content {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.7);
+            max-width: 600px;
+            border-radius: 8px;
+        }
+
+        /* Header */
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        #logo {
+            height: 40px;
+        }
+
+        #language button,
+        #sign-in {
+            background: none;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        #sign-in {
+            background-color: #e50914;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        /* Main Text */
+        #main-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        #main-content p {
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+        }
+
+        /* Form */
+        #signup-form {
+            display: flex;
+            margin-top: 1.5rem;
+            position: relative;
+        }
+
+        #signup-form input {
+            padding: 0.75rem;
+            font-size: 1rem;
+            border: 1px solid #8c8c8c;
+            border-radius: 4px 0 0 4px;
+            outline: none;
+            flex-grow: 1;
+        }
+
+        #signup-form button {
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            background-color: #e50914;
+            color: white;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Error Message */
+        #signup-form input:invalid + button::after {
+            content: "⚠ Email is required.";
+            color: #ffa00a;
+            font-size: 0.8rem;
+            position: absolute;
+            margin-top: 0.5rem;
+            margin-left: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div id="header">
+            <img src="netflix-logo.png" alt="Netflix Logo" id="logo"> <!-- Replace with actual logo image URL -->
+            <div id="language">
+                <button>🌐 English ▼</button>
+            </div>
+            <button id="sign-in">Sign In</button>
+        </div>
+        
+        <div id="main-content">
+            <h1>Unlimited movies, TV shows and more</h1>
+            <p>Starts at ₹149. Cancel at any time.</p>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            
+            <form id="signup-form">
+                <input type="email" placeholder="Email address" required>
+                <button type="submit">Get Started</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
